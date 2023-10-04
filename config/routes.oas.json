@@ -31,6 +31,27 @@
         },
         "operationId": "84b530bd-5e77-4999-8f90-862cff6a02f8"
       }
+    },
+    "/v2/test": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "get": {
+        "summary": "This is the new uber special API",
+        "description": "Lorem ipsum dolor sit amet, **consectetur adipiscing** elit, sed do `eiusmod tempor` incididunt ut labore et dolore magna aliqua.",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "default",
+            "module": "$import(./modules/hello-world)",
+            "options": {}
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "c3f722ef-81ea-42ee-bcba-852286eee768"
+      }
     }
   }
 }
